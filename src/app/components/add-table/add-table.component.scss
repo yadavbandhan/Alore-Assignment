@@ -1,0 +1,124 @@
+.heading {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 18px;
+  color: #3c3c3c;
+  margin-bottom: 25px;
+}
+
+.input-text {
+  font-weight: 700;
+  color: #3c3c3c;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 16px;
+  margin-bottom: 7px;
+}
+
+.dropdown {
+  border: 0.5px solid #888888;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.text {
+  font-weight: 700;
+  color: #3c3c3c;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+input {
+  border: 0.5px solid #888888;
+  width: 448px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+}
+
+input:focus {
+  outline: 1px solid #334bfa;
+}
+
+.close {
+  text-align: end;
+  cursor: pointer;
+}
+
+.color-dropdown {
+  position: relative;
+  width: 470px;
+}
+
+.emoji-mart {
+  position: absolute;
+  top: 45px;
+  z-index: 10;
+}
+
+.icon-dropdown {
+  position: relative;
+  width: 470px;
+}
+
+.color {
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.palette {
+  position: absolute;
+  display: grid;
+  padding: 7px;
+  border-radius: 10px;
+  width: 115px;
+  top: 46px;
+  border: 0.5px solid #888888;
+  background-color: white;
+  grid-template-columns: auto auto auto auto auto;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  height: 45px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.add {
+  background-color: #3c3c3c80;
+  color: white;
+  border: none;
+  transition: background-color 0.25 ease-in;
+}
+
+.clickable {
+  background-color: #334bfa;
+  cursor: pointer;
+}
+
+.cancel {
+  cursor: pointer;
+  color: #334bfa;
+  border: 2px solid #334bfa;
+  background-color: white;
+  margin-left: 15px;
+}
+
+.buttons {
+  margin-top: 150px;
+}

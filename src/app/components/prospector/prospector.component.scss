@@ -1,0 +1,75 @@
+.prospector {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 30px);
+}
+
+.segments {
+  flex: 1 1 auto !important;
+}
+
+input {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+  border: 1px solid #cccccc;
+  width: 216px;
+  height: 23px;
+  padding: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.segment-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+  color: rgba(60, 60, 60, 0.7);
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+}
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+}
+
+.segment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.segment-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  margin-left: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.add-button {
+  background-color: #334bfa;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 12px;
+  cursor: pointer;
+  text-align: center;
+}

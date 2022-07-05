@@ -1,0 +1,42 @@
+<div class="dialog">
+    <div class="close" (click)="close()">
+        <img src="/assets/icons/close.svg" alt="">
+    </div>
+    <div class="heading">Add a table</div>
+    <div>
+        <div class="input-text text">Name*</div>
+        <input type="text" class="text" [(ngModel)]="name" placeholder="Ex: Computer Software">
+    </div>
+    <div>
+        <div class="input-text text">Icon</div>
+        <div class="icon-dropdown">
+            <div class="dropdown" (click)="toggleEmojiDropdown()">
+                <ngx-emoji [emoji]="selectedIcon" [size]="emojiSize"></ngx-emoji>
+                <img src="/assets/icons/down-arrow.svg" alt="">
+            </div>
+            <div *ngIf="showEmojiDropdown" class="emoji-mart">
+                <emoji-mart title="Pick your emoji…" emoji="point_up" [darkMode]="false"
+                    (emojiClick)="onEmojiClick($event)"></emoji-mart>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="input-text text">Color</div>
+        <div class="color-dropdown">
+            <div class="dropdown" (click)="toggleColorPalette()">
+                <div [style.background-color]="selectedColor" class="color">
+                </div>
+                <img src="/assets/icons/down-arrow.svg" alt="">
+            </div>
+            <div *ngIf="showColorPalette" class="palette">
+                <div *ngFor="let color of colorPalette" [style.background-color]="color" class="color"
+                    (click)="onColorSelect(color)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="add button" [ngClass]="{'clickable':name}" (click)="addTable()">Add</button>
+        <button class="cancel button" (click)="close()">Cancel</button>
+    </div>
+</div>

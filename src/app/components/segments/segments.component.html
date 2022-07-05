@@ -1,0 +1,30 @@
+<div class="segment">
+    <div class="header">
+        <img src="/assets/icons/header_icons.png" alt="" height="50px">
+    </div>
+    <div class="separator"></div>
+    <div class="segments">
+        <div *ngFor="let segment of segments;let i = index" class="segment-box">
+            <div class="segment-header">
+                <ngx-emoji [emoji]="segment.icon" [size]="emojiSize"></ngx-emoji>
+                <span class="segment-header-text">{{segment.name}}</span>
+                <img src="/assets/icons/down-arrow.svg" alt="" height="25px" width="25px">
+            </div>
+            <div class="tables">
+                <div *ngFor="let table of segment.tables">
+                    <div class="table" [style.border-color]="table.color">
+                        <ngx-emoji [emoji]="table.icon" [size]="emojiSize"></ngx-emoji>
+                        <div class="color-dot" [style.background-color]="table.color"></div>
+                    </div>
+                    <div class="table-text">{{table.name}}</div>
+                </div>
+                <div class="add-table table" (click)="addTable(i)">
+                    <span>+</span>
+                    <div class="add-table-tooltip">
+                        Add a new table
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

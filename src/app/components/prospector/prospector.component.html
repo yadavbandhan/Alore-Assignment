@@ -1,0 +1,17 @@
+<div class="prospector">
+    <div class="heading">
+        Prospector
+    </div>
+    <input type="text" placeholder="Search for a table or a segment" name="" id="">
+    <div class="segment-text">
+        <span>SEGMENTS</span>
+    </div>
+    <div class="segments">
+        <div *ngFor="let segment of segments" class="segment">
+            <ngx-emoji [emoji]="segment.icon" [size]="emojiSize"></ngx-emoji>
+            <span class="segment-name">{{segment.name}}</span>
+        </div>
+    </div>
+
+    <div class="add-button" (click)="addSegment()">+ Add a segment</div>
+</div>
